@@ -1,0 +1,21 @@
+.header {
+    background-color: var(--bg-cream);
+    color: var(--fg-cream);
+    height: 4.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    transition: background-color 200ms ease-in-out,
+    color 200ms ease-in-out;
+}
+
+.header a {
+    height: 2.5rem;
+}
+
+.header a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

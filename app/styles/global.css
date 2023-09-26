@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.buttonIcon {
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: unset;
+    color: unset;
+    cursor: pointer;
+    font-size: 1.5rem;
+}

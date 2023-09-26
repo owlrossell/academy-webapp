@@ -1,0 +1,12 @@
+.lightTheme {
+    --bg-cream: #FFFFBF;
+
+    --fg-cream: #A69673;
+
+}
+
+.darkTheme {
+    --bg-cream: #333326;
+
+    --fg-cream: #FFFFFD;
+}
