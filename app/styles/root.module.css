@@ -1,12 +1,12 @@
 .lightTheme {
     --bg-cream: #FFFFBF;
+    --bg-gradient-cream: radial-gradient(50% 50% at 50% 50%, #FFFFBF 0%, #FFEA80 100%);
 
     --fg-cream: #A69673;
-
 }
 
 .darkTheme {
-    --bg-cream: #333326;
+    --bg-cream: #002B57;
 
     --fg-cream: #FFFFFD;
 }

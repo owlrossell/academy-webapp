@@ -13,17 +13,17 @@ interface HeaderProps {
 const Header = ({isDarkMode, toggleDarkMode}: HeaderProps) => {
     return (
         <header className={`container ${styles.header}`}>
-            <Link to={'/'}>
+            <Link to={'/'} className={'linkOpacity'}>
                 <img src={isDarkMode ? logoDark : logoLight} alt="Logo"/>
             </Link>
             <div>
-                <button className={'buttonIcon'}>
+                <button className={'buttonIcon linkOpacity'}>
                     <i className='fa-solid fa-magnifying-glass'/>
                 </button>
-                <button className={'buttonIcon'} onClick={toggleDarkMode}>
+                <button className={'buttonIcon linkOpacity'} onClick={toggleDarkMode}>
                     <i className={isDarkMode ? 'fa-solid fa-sun' : 'fa-solid fa-moon'}/>
                 </button>
-                <button className={'buttonIcon'}>
+                <button className={'buttonIcon linkOpacity'}>
                     <i className='fa fa-bars'/>
                 </button>
             </div>

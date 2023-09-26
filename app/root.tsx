@@ -13,8 +13,18 @@ import {cssBundleHref} from "@remix-run/css-bundle";
 import global from '~/styles/global.css';
 import styles from './styles/root.module.css';
 import Header from "~/components/header";
+import Footer from "~/components/footer/Footer";
 
 export const links: LinksFunction = () => [
+    {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+    {rel: 'preconnect', href: 'https://fonts.gstatic.com'},
+    {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700',
+        integrity: 'sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==',
+        crossOrigin: 'anonymous',
+        referrerPolicy: 'no-referrer',
+    },
     {
         rel: 'stylesheet',
         href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css',
@@ -31,7 +41,6 @@ export default function App() {
 
     const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
-
     return (
         <html lang="es">
         <head>
@@ -43,6 +52,7 @@ export default function App() {
         <body className={isDarkMode ? styles.darkTheme : styles.lightTheme}>
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
         <Outlet/>
+        <Footer isDarkMode={isDarkMode}/>
         <ScrollRestoration/>
         <Scripts/>
         <LiveReload/>

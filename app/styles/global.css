@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Montserrat, sans-serif;
+}
+
+:root {
+    --transition-colors: background-color 200ms ease-in-out,
+    color 200ms ease-in-out;
+}
+
 .container {
     padding: 0 1rem;
 }
 
-.buttonIcon {
+.buttonIcon, .linkIcon {
     height: 2.5rem;
     aspect-ratio: 1/1;
     border: none;
@@ -16,4 +25,16 @@
     color: unset;
     cursor: pointer;
     font-size: 1.5rem;
+}
+.linkIcon {
+    display: block;
+}
+
+.linkOpacity {
+    filter: opacity(1);
+    transition: filter 200ms ease-in-out;
+}
+
+.linkOpacity:hover {
+    filter: opacity(.7);
 }

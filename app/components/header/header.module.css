@@ -5,9 +5,10 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
 
-    transition: background-color 200ms ease-in-out,
-    color 200ms ease-in-out;
+    transition: var(--transition-colors);
 }
 
 .header a {
