@@ -10,6 +10,7 @@ import {
 import type {LinksFunction} from "@remix-run/node";
 
 import {cssBundleHref} from "@remix-run/css-bundle";
+import animate from '~/styles/animate.css';
 import global from '~/styles/global.css';
 import styles from './styles/root.module.css';
 import Header from "~/components/header";
@@ -20,10 +21,7 @@ export const links: LinksFunction = () => [
     {rel: 'preconnect', href: 'https://fonts.gstatic.com'},
     {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700',
-        integrity: 'sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==',
-        crossOrigin: 'anonymous',
-        referrerPolicy: 'no-referrer',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap',
     },
     {
         rel: 'stylesheet',
@@ -32,6 +30,7 @@ export const links: LinksFunction = () => [
         crossOrigin: 'anonymous',
         referrerPolicy: 'no-referrer',
     },
+    {rel: 'stylesheet', href: animate},
     {rel: 'stylesheet', href: global},
     ...(cssBundleHref ? [{rel: "stylesheet", href: cssBundleHref}] : []),
 ];

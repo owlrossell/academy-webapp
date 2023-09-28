@@ -3,10 +3,16 @@
     --bg-gradient-cream: radial-gradient(50% 50% at 50% 50%, #FFFFBF 0%, #FFEA80 100%);
 
     --fg-cream: #A69673;
+    --fg-cream-dark: #685636;
+
+    --color-red: #E52222;
 }
 
 .darkTheme {
-    --bg-cream: #002B57;
+    --bg-cream: #7F7359;
+    --bg-gradient-cream: #2C2B17;
 
-    --fg-cream: #FFFFFD;
+    --fg-cream: #F4FAFF;
+    --fg-cream-dark: #FFFFFF;
+    --color-red: #E52222;
 }
