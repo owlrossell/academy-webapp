@@ -1,7 +1,7 @@
 import styles from './hero-type-one.module.css';
 import ReactMarkdown from "react-markdown";
 import {CSSTransition, SwitchTransition} from "react-transition-group";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useState} from "react";
 
 interface HeroElement {
     title: string,
