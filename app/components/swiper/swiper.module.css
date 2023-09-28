@@ -1,0 +1,29 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--fg-cream-dark);
+}
+
+.swiper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    position: relative;
+}
+
+.swiper > *:first-child {
+    margin-left: 1rem;
+}
+
+.swiper > *:last-child {
+    margin-right: 1rem;
+}

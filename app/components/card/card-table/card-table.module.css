@@ -1,0 +1,40 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: var(--fg-cream-dark);
+}
+
+.table {
+
+}
+
+.table th, td {
+    padding: 1rem;
+}
+
+.table th {
+    color: var(--fg-cream-dark);
+    text-align: left;
+}
+
+.table td {
+    color: var(--fg-cream);
+    text-align: right;
+}

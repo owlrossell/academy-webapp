@@ -11,6 +11,8 @@ html {
 :root {
     --transition-colors: background-color 200ms ease-in-out,
     color 200ms ease-in-out;
+    --shadow-bottom: 0 4px 8px rgba(0, 0, 0, 0.25);
+    --shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 
 .container {

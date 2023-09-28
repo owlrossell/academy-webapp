@@ -6,13 +6,20 @@
     --fg-cream-dark: #685636;
 
     --color-red: #E52222;
+    --color-white: #FBFAF6
 }
 
 .darkTheme {
     --bg-cream: #7F7359;
     --bg-gradient-cream: #2C2B17;
 
-    --fg-cream: #F4FAFF;
-    --fg-cream-dark: #FFFFFF;
+    --fg-cream: var(--color-white);
+    --fg-cream-dark: var(--color-white);
     --color-red: #E52222;
+
+    --color-white: #FBFAF6
+}
+
+.body {
+    background-color: var(--color-white);
 }

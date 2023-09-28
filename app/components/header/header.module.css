@@ -11,6 +11,7 @@
     width: 100%;
 
     transition: var(--transition-colors);
+    box-shadow: var(--shadow-bottom);
 }
 
 .header a {

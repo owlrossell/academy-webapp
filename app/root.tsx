@@ -7,7 +7,7 @@ import {
     Scripts,
     ScrollRestoration,
 } from "@remix-run/react";
-import type {LinksFunction} from "@remix-run/node";
+import type {LinksFunction, MetaFunction} from "@remix-run/node";
 
 import {cssBundleHref} from "@remix-run/css-bundle";
 import animate from '~/styles/animate.css';
@@ -16,6 +16,12 @@ import styles from './styles/root.module.css';
 import Header from "~/components/header";
 import Footer from "~/components/footer/Footer";
 
+export const meta: MetaFunction = () => [
+    {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1.0, user-scalable=no',
+    }
+]
 export const links: LinksFunction = () => [
     {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
     {rel: 'preconnect', href: 'https://fonts.gstatic.com'},
@@ -48,7 +54,7 @@ export default function App() {
             <Meta/>
             <Links/>
         </head>
-        <body className={isDarkMode ? styles.darkTheme : styles.lightTheme}>
+        <body className={`${isDarkMode ? styles.darkTheme : styles.lightTheme} ${styles.body}`}>
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
         <Outlet/>
         <Footer isDarkMode={isDarkMode}/>
